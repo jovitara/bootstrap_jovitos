@@ -11,50 +11,53 @@
       integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
   </head>
   <body>
-
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">BIT</a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >Home</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Pricing</a>
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link disabled"
-                    href="#"
-                    tabindex="-1"
-                    aria-disabled="true"
-                    >Disabled</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">BIT</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link disabled"
+                href="#"
+                tabindex="-1"
+                aria-disabled="true"
+                >Disabled</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
     <div class="container">
       <div class="row">
@@ -87,6 +90,85 @@
             <div class="card-footer">
               <div class="row d-flex text-center">
                 <div class="button col-4 w-100">
+                  <a
+                    href="#"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#videomodal"
+                    >Buy Now</a
+                  >
+                </div>
+                <div
+                  class="col-4 text-danger text-decoration-line-through w-100"
+                >
+                  <p>$199</p>
+                </div>
+                <div class="col-4 w-100 text-success">
+                  <h5>$102</h5>
+                </div>
+              </div>
+              <div class="btn-group">
+                <button type="button" class="btn btn-secondary">
+                  <i class="las la-shopping-basket"></i>
+                </button>
+                <button
+                  type="button"
+                  class="
+                    btn btn-secondary
+                    dropdown-toggle dropdown-toggle-split
+                  "
+                  data-bs-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Trinti</a>
+                  <a class="dropdown-item" href="#">Redaguoti</a>
+                  <a class="dropdown-item" href="#">Peržiūrėti</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal start -->
+        <div id="videomodal" class="modal" tabindex="10">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>Modal body text goes here.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- modal end -->
+
+        <div class="col-xl-6 col-lg-3 col-md-4 col-12 mb-1">
+          <div class="card">
+            <img
+              src="https://bit.ly/2SiZpPj"
+              class="card-img-top p-3"
+              alt="Product"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+            <div class="card-footer">
+              <div class="row d-flex text-center">
+                <div class="button col-4 w-100">
                   <a href="#" class="btn btn-primary">Buy Now</a>
                 </div>
                 <div
@@ -97,6 +179,9 @@
                 <div class="col-4 w-100 text-success">
                   <h5>$102</h5>
                 </div>
+              </div>
+              <div class="btn btn-secondary">
+                <i class="las la-shopping-basket"></i>
               </div>
             </div>
           </div>
@@ -129,36 +214,8 @@
                   <h5>$102</h5>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-xl-6 col-lg-3 col-md-4 col-12 mb-1">
-          <div class="card">
-            <img
-              src="https://bit.ly/2SiZpPj"
-              class="card-img-top p-3"
-              alt="Product"
-            />
-            <div class="card-body">
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-            </div>
-            <div class="card-footer">
-              <div class="row d-flex text-center">
-                <div class="button col-4 w-100">
-                  <a href="#" class="btn btn-primary">Buy Now</a>
-                </div>
-                <div
-                  class="col-4 text-danger text-decoration-line-through w-100"
-                >
-                  <p>$199</p>
-                </div>
-                <div class="col-4 w-100 text-success">
-                  <h5>$102</h5>
-                </div>
+              <div class="btn btn-secondary">
+                <i class="las la-shopping-basket"></i>
               </div>
             </div>
           </div>
@@ -190,6 +247,9 @@
                 <div class="col-4 w-100 text-success">
                   <h5>$102</h5>
                 </div>
+              </div>
+              <div class="btn btn-secondary">
+                <i class="las la-shopping-basket"></i>
               </div>
             </div>
           </div>
